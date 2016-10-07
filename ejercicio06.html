@@ -1,0 +1,31 @@
+<!-- Formularios. Crea dos ficheros (ejercicio06.html y ejercicio06.php). En el primero construye un formulario para el registro de libros en una biblioteca. En él usa todos los tipos básicos de input: text, password, select, option, checkbox y submit. El segundo debe mostrar por pantalla los valores devueltos. Prueba $_GET, $_POST y $_REQUEST. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <title>Ejercicio 6</title>
+</head>
+<body>
+	<form method="post" action="ejercicio06.php" id="formulario">
+		Nombre:
+  		<input type="text" name="nombre" value="" /><br>
+  		
+  		Contraseña:
+  		<input type="password" name="contrasena" value="" /><br>
+  		
+  		Seleccione el libro:
+  		<select name="lista" form="formulario">
+ 		 	<option value="libro1">Libro 1</option>
+  			<option value="libro2">Libro 2</option>
+			<option value="libro3">Libro 3</option>
+		</select><br>
+
+		Seleccione la editorial:<br>
+		<input type="checkbox" name="editorial1" value="editorial"> Editorial 1<br>
+  		<input type="checkbox" name="editorial2" value="editorial"> Editorial 2<br>
+
+  		<input type="submit" value="Enviar" />
+	</form>
+</body>
+</html>
